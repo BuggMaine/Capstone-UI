@@ -1,0 +1,40 @@
+﻿<Window x:Class="Capstone_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Capstone_UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920"
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+>
+
+    <Grid x:Name="MainGrid" Background="White">
+        <Image Margin="354,196,354,278" Source="/Carter's Lake.jpg" Stretch="Fill"/>
+        <Image x:Name="Army_Corp_Logo" HorizontalAlignment="Left" Height="123" VerticalAlignment="Top" Width="189">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Army Corp Logo.jpg"/>
+            </Image.OpacityMask>
+        </Image>
+        <Rectangle HorizontalAlignment="Center" Height="73" Margin="0,1007,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Center" Height="46" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Center" Height="46" Margin="0,961,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FF777777"/>
+        <Rectangle HorizontalAlignment="Center" Height="49" Margin="0,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FF777777"/>
+        <Rectangle HorizontalAlignment="Center" Height="82" Margin="0,109,0,0" Stroke="Black" VerticalAlignment="Top" Width="1476" Fill="#FFD6D6D6"/>
+        <Button x:Name="Exit_Button" Content="Exit" HorizontalAlignment="Left" Height="76" Margin="39,984,0,0" VerticalAlignment="Top" Width="348" Background="#FFB90000" FontSize="48" BorderBrush="Black" Click="menuExitButton"/>
+        <Button x:Name="Play_Button" Content="PLAY" HorizontalAlignment="Center" Height="94" Margin="0,834,0,0" VerticalAlignment="Top" Width="528" Background="#FFD6D6D6" FontSize="48" BorderBrush="Black" Click="Play_Button_Click"/>
+        <Button x:Name="Ranger_Button" Content="Ranger Tools" HorizontalAlignment="Right" Height="76" Margin="0,984,39,0" VerticalAlignment="Top" Width="348" Background="#FFD6D6D6" FontSize="48" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="354,95,0,0" TextWrapping="Wrap" Text="Welcome To Carter's Lake Visitor Center" VerticalAlignment="Top" Height="93" Width="1344" FontSize="72"/>
+        <Image Margin="10,10,1814,993" Source="/Army Corp Logo.jpg" Stretch="Fill"/>
+
+
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+
+
+
+
+</Window>
