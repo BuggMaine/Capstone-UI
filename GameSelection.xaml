@@ -13,9 +13,87 @@
         <Rectangle HorizontalAlignment="Center" Height="46" Margin="0,961,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FF777777"/>
         <Rectangle HorizontalAlignment="Center" Height="46" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="Black"/>
         <Rectangle HorizontalAlignment="Center" Height="49" Margin="0,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FF777777"/>
-        <Image Margin="10,10,1814,993" Source="/Army Corp Logo.jpg" Stretch="Fill"/>
-        <Button x:Name="gameSelectBackButton" Content="Back" HorizontalAlignment="Left" Height="76" Margin="39,984,0,0" VerticalAlignment="Top" Width="348" Background="#FFB90000" FontSize="48" BorderBrush="Black" Click="gameSelectGoBack"/>
+
+        <!-- ================= MASTER-DETAIL CONTENT AREA ================= -->
+        <Grid Margin="0,95,0,119">
+            <Grid.ColumnDefinitions>
+                <!-- Left Sidebar Navigation -->
+                <ColumnDefinition Width="380"/>
+                <!-- Right Game Detail Display -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- LEFT COLUMN: GAME TABS -->
+            <Border Grid.Column="0" Background="#EAEAEA" BorderBrush="#AAAAAA" BorderThickness="0,0,2,0">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" PanningMode="VerticalOnly">
+                    <ListBox x:Name="GameListBox" 
+                     BorderThickness="0" 
+                     Background="Transparent" 
+                     Margin="10"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     SelectionChanged="GameListBox_SelectionChanged">
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="MinHeight" Value="60"/>
+                                <Setter Property="Margin" Value="0,5"/>
+                                <Setter Property="Padding" Value="15,10"/>
+                                <Setter Property="FontSize" Value="22"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="BorderBrush" Value="#CCCCCC"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Title}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </ScrollViewer>
+            </Border>
+
+            <!-- RIGHT COLUMN: GAME DETAILS -->
+            <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" PanningMode="VerticalOnly">
+                <StackPanel x:Name="DetailPanel" Margin="40" HorizontalAlignment="Center" Width="900">
+
+                    <!-- Game Title -->
+                    <TextBlock x:Name="TxtTitle" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+                    <!-- Thumbnail Image -->
+                    <Border CornerRadius="12" ClipToBounds="True" Margin="0,0,0,25" HorizontalAlignment="Center">
+                        <Image x:Name="ImgThumbnail" Height="320" Stretch="Uniform"/>
+                    </Border>
+
+                    <!-- 3. Genre / Category with Single Star (Under Thumbnail) -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,25">
+                        <TextBlock Text="★ " Foreground="#FFC107" FontSize="26" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TxtCategory" FontSize="22" FontWeight="SemiBold" Foreground="#444444" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Play Button -->
+                    <Button Content="▶" Width="70" Height="70" 
+                    Background="#2ECC71" Foreground="White" FontSize="28" 
+                    HorizontalAlignment="Center" Margin="0,0,0,25" Cursor="Hand">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="35"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <!-- Description / Detail Box -->
+                    <Border Background="#F9F9F9" CornerRadius="8" Padding="20" BorderBrush="#E0E0E0" BorderThickness="1">
+                        <TextBlock x:Name="TxtDescription" TextWrapping="Wrap" FontSize="18" Foreground="#333333" LineHeight="26"/>
+                    </Border>
+
+                </StackPanel>
+            </ScrollViewer>
+            <Button x:Name="gameSelectBackButton" Content="Back" Width="348" Height="76" Margin="39,886,1524,-96" Background="#FFB90000" FontSize="48" Click="gameSelectBackButton_Click" Grid.ColumnSpan="2"/>
+        </Grid>
+
+        <Image Margin="10,10,1814,993" Source= "/Images/Army Corp Logo.jpg" Stretch="Fill"/>
+        <Button x:Name="logoButton" Content="&#xD;&#xA;" HorizontalAlignment="Left" Height="77" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Background="Transparent" Click="logoExit"/>
 
     </Grid>
-    
 </Page>

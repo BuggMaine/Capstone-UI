@@ -12,11 +12,31 @@
   <ItemGroup>
     <None Remove="Army Corp Logo.jpg" />
     <None Remove="Carter%27s Lake.jpg" />
+    <None Remove="Images\donkeykong.jpg" />
+    <None Remove="Images\megaman.jpg" />
+    <None Remove="Images\re2.jpg" />
+    <None Remove="Images\supermetroid.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Army Corp Logo.jpg" />
-    <Resource Include="Carter's Lake.jpg" />
+    <Resource Include="Images\Army Corp Logo.jpg">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Carter%27s Lake.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\donkeykong.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\megaman.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\re2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\supermetroid.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
