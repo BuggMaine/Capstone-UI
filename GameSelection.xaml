@@ -74,7 +74,7 @@
                     <!-- Play Button -->
                     <Button Content="▶" Width="70" Height="70" 
                     Background="#2ECC71" Foreground="White" FontSize="28" 
-                    HorizontalAlignment="Center" Margin="0,0,0,25" Cursor="Hand">
+                    HorizontalAlignment="Center" Margin="0,0,0,25" Cursor="Hand" Click="Button_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="35"/>
@@ -89,7 +89,7 @@
 
                 </StackPanel>
             </ScrollViewer>
-            <Button x:Name="gameSelectBackButton" Content="Back" Width="348" Height="76" Margin="39,886,1524,-96" Background="#FFB90000" FontSize="48" Click="gameSelectBackButton_Click" Grid.ColumnSpan="2"/>
+            <Button x:Name="gameSelectBackButton" Content="Back" Width="348" Height="76" Margin="39,889,1536,-99" Background="#FFB90000" FontSize="48" Click="gameSelectBackButton_Click" Grid.ColumnSpan="2"/>
         </Grid>
 
         <Image Margin="10,10,1814,993" Source= "/Images/Army Corp Logo.jpg" Stretch="Fill"/>

@@ -21,11 +21,9 @@
         <Rectangle HorizontalAlignment="Center" Height="82" Margin="0,109,0,0" Stroke="Black" VerticalAlignment="Top" Width="1476" Fill="#FFD6D6D6"/>
         <Button x:Name="Exit_Button" Content="Exit" HorizontalAlignment="Left" Height="76" Margin="39,984,0,0" VerticalAlignment="Top" Width="348" Background="#FFB90000" FontSize="48" BorderBrush="Black" Click="menuExitButton"/>
         <Button x:Name="Play_Button" Content="PLAY" HorizontalAlignment="Center" Height="94" Margin="0,834,0,0" VerticalAlignment="Top" Width="528" Background="#FFD6D6D6" FontSize="48" BorderBrush="Black" Click="Play_Button_Click"/>
-        <Button x:Name="Ranger_Button" Content="Ranger Tools" HorizontalAlignment="Right" Height="76" Margin="0,984,39,0" VerticalAlignment="Top" Width="348" Background="#FFD6D6D6" FontSize="48" BorderBrush="Black"/>
+        <Button x:Name="Ranger_Button" Content="Ranger Tools" HorizontalAlignment="Right" Height="76" Margin="0,984,39,0" VerticalAlignment="Top" Width="348" Background="#FFD6D6D6" FontSize="48" BorderBrush="Black" Click="Ranger_Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="354,95,0,0" TextWrapping="Wrap" Text="Welcome To Carter's Lake Visitor Center" VerticalAlignment="Top" Height="93" Width="1344" FontSize="72"/>
         <Image Margin="10,10,1814,993" Source= "/Images/Army Corp Logo.jpg" Stretch="Fill"/>
-
-
         <Button x:Name="logoButton" Content="&#xD;&#xA;" HorizontalAlignment="Left" Height="77" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Background="Transparent" Click="logoExit"/>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
     </Grid>

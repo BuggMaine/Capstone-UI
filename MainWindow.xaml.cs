@@ -41,5 +41,10 @@ namespace Capstone_UI
                 Application.Current.Shutdown();
             }
         }
+
+        private void Ranger_Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new RangerTools());
+        }
     }
 }

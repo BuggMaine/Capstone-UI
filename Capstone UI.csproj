@@ -12,13 +12,44 @@
   <ItemGroup>
     <None Remove="Army Corp Logo.jpg" />
     <None Remove="Carter%27s Lake.jpg" />
+    <None Remove="Images\A Boating Game Character Select.png" />
+    <None Remove="Images\A Boating Game GamePlay 2.png" />
+    <None Remove="Images\A Boating Game Gameplay.png" />
+    <None Remove="Images\A Boating Game Menu.png" />
+    <None Remove="Images\A Boating Game Quiz.png" />
     <None Remove="Images\donkeykong.jpg" />
+    <None Remove="Images\Drawing The Night Sky Gameplay 1.png" />
+    <None Remove="Images\Drawing The Night Sky Gameplay 2.png" />
+    <None Remove="Images\Drawing The Night Sky gameplay 3.png" />
+    <None Remove="Images\Drawing The Night Sky Menu.png" />
+    <None Remove="Images\I Spy Water Safety Character Select.png" />
+    <None Remove="Images\I Spy Water Safety Gameplay.png" />
+    <None Remove="Images\I Spy Water Safety Menu.png" />
     <None Remove="Images\megaman.jpg" />
     <None Remove="Images\re2.jpg" />
     <None Remove="Images\supermetroid.jpg" />
+    <None Remove="Images\Water Management Gameplay 2.png" />
+    <None Remove="Images\Water Management Gameplay 3.png" />
+    <None Remove="Images\Water Management Gameplay.png" />
+    <None Remove="Images\Water Management Menu.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\A Boating Game Character Select.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\A Boating Game GamePlay 2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\A Boating Game Gameplay.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\A Boating Game Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\A Boating Game Quiz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Army Corp Logo.jpg">
       <CopyToOutputDirectory></CopyToOutputDirectory>
     </Resource>
@@ -28,6 +59,27 @@
     <Resource Include="Images\donkeykong.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\Drawing The Night Sky Gameplay 1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Drawing The Night Sky Gameplay 2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Drawing The Night Sky gameplay 3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Drawing The Night Sky Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\I Spy Water Safety Character Select.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\I Spy Water Safety Gameplay.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\I Spy Water Safety Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\megaman.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -35,6 +87,18 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\supermetroid.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Water Management Gameplay 2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Water Management Gameplay 3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Water Management Gameplay.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Water Management Menu.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
