@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Capstone_UI
+namespace Capstone_UI.Models
 {
     public class Game
     {

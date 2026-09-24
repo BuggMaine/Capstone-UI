@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Capstone_UI.Models;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
